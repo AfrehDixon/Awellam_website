@@ -1,0 +1,49 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap') */
+
+*{
+  padding: 0;
+  margin:  0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* overflow: hidden; */
+  
+}
+
+body{
+  background: #f5f5f5;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+.container{
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-around;
+  
+}
+.btn{
+    background: #fff;
+    color: #212121;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.for{
+  margin-left: 14px;
+  size: 20px;
+}
+
