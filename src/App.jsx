@@ -14,6 +14,7 @@ import Navbar from "./components/Navbar";
 import { Hero } from "./components/Hero/Hero";
 import { Header } from "./components/Header/Header";
 import Gallary from "./components/Gallary/Gallary";
+import Testimonials from "./components/Testimonials/Testimonials";
 // import Layout from "./pages/Layout";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
 				<Header subTitle="Gallary" title="Work photos" />
 				<Gallary />
 				<Header subTitle="Testimonials" title="What our customers say" />
+				<Testimonials />
 			</div>
 		</>
 		// <Router>
