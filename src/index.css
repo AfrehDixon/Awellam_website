@@ -22,8 +22,8 @@ a{
   cursor: pointer;
 }
 .container{
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
   justify-content: space-around;
   
 }
@@ -45,5 +45,17 @@ a{
 .for{
   margin-left: 14px;
   size: 20px;
+}
+
+
+/* MEDIa QURIES */
+@media (max-width: 1200px){
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .btn{
+    padding: 14px 22px;
+  }
 }
 

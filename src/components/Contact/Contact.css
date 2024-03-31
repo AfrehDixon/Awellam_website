@@ -37,3 +37,28 @@
      color: #1942b2;
     
 }
+input, textarea{
+    display: block;
+    width: 100%;
+    background: #ebecfe;
+    padding: 15px;
+    border:0;
+    outline: 0;
+    /* margin-bottom: 15px;
+    margin-top: 5px; */
+    resize: none;
+    margin: 5px 0 15px 0;
+}
+
+/* media */
+
+@media (max-width: 800px){
+    .contact {
+        display: block;
+    };
+    .contact-col{
+        margin-bottom: 20px;
+
+    }
+}
+
