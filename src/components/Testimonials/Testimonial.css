@@ -31,6 +31,7 @@
     width: 200%;
     display: flex;
     overflow-x: hidden;
+    transform:translateX(-50%)
 
 }
 .slider ul li {
