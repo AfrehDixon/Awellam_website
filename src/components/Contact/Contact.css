@@ -1,0 +1,39 @@
+.contact{
+    margin: 80px auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-col{
+    flex-basis: 48%;
+    color: #676767;
+}
+.contact-col h3{
+    color: #1942b2;
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.contact-img{
+    width: 35px;
+    margin-left: 10px;
+
+}
+
+.contact-col p{
+    max-width: 500px;
+    list-style: 0.3;
+    line-height: 1.4;
+}
+.contact-col ul li{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.icon{
+    margin-right: 10px;
+     color: #1942b2;
+    
+}

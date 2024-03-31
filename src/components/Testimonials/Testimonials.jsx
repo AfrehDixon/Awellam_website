@@ -1,16 +1,34 @@
-import React from "react";
+import React, { useRef } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import "./Testimonial.css";
 import banner1 from "../../assets/banner1.jpg";
-import { HiOutlineUser } from "react-icons/hi";
+// import { HiOutlineUser } from "react-icons/hi";
 
 const Testimonials = () => {
+	const slider = useRef()
+
+	let tx = 0
+	function handleforward () {
+		if ( tx > -30) {
+			tx -=50
+		}
+		slider.current.style.transform = `translateX(${tx}%)`
+
+	}
+
+	function handlebacward () {
+				if (tx < 50) {
+					tx += 50;
+				}
+				slider.current.style.transform = `translateX(${tx}%)`;
+
+	}
 	return (
 		<div className="testimonials">
-			<GoArrowLeft size={50} className="back-btn" />
-			<GoArrowRight size={50} className="next-btn" />
+			<GoArrowLeft size={50} className="back-btn" onClick={handlebacward}/>
+			<GoArrowRight size={50} className="next-btn" onClick={handleforward}/>
 			<div className="slider">
-				<ul>
+				<ul ref={slider}>
 					<li>
 						<div className="slide">
                             <div className="user-info">
