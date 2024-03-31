@@ -3,10 +3,11 @@
 // import { TfiAlignRight } from "react-icons/tfi";
 // import { Link } from "react-router-dom";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import logo from "../assets/logo.png";
 import Button from "./Button/Button";
 import "./Navbar.css";
+import { HiMenu } from "react-icons/hi";
 
 export default function Navbar () {
 	const [sticky ,setsticky] =useState(false)
@@ -16,7 +17,12 @@ export default function Navbar () {
 		window.addEventListener( 'scroll', () => {
 			window.scrollY > 50 ? setsticky(true) : setsticky(false)
 		})
-	})
+	} )
+	const [mobilemenu, setmobile] = useState( false )
+	
+	const hide = () => {
+		mobilemenu? setmobile(false): setmobile(true)
+	}
 
 	return (
 		// <div className="flex justify-between static ">
@@ -39,11 +45,12 @@ export default function Navbar () {
 		// 		/>
 		// 	)}
 		// </div>
+		
 
 		<nav className={`container ${sticky ? 'dark-nav' : ''}`}>
 			<img src={logo} alt="logo" className="logo" />
 
-			<ul>
+			<ul className={mobilemenu? '': 'hide'}>
 				<li>Home</li>
 				<li>Service</li>
 				<li>About</li>
@@ -52,6 +59,7 @@ export default function Navbar () {
 					<button className="btn">Log In</button>
 				</li>
 			</ul>
+				<HiMenu className="menu" size={ 40 } onClick={ hide } />
 		</nav>
 	);
 }

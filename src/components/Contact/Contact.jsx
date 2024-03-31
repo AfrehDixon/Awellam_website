@@ -29,6 +29,7 @@ export const Contact = () => {
 					<label htmlFor="">Write your message</label>
 					<textarea name="message" id="" rows="10" placeholder="Enter you message" required></textarea>
 					<button type="submit" className="btn">Submit</button>
+					
 				</form>
 			</div>
 		</div>

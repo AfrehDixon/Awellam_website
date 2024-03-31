@@ -6,7 +6,7 @@ export default function About() {
 	return (
 		<div className="about">
             <div className="about-left">
-                <HiTrendingUp />
+                {/* <HiTrendingUp /> */}
 				{/* <img src={awellambanner} alt="about-img" className="about-img" /> */}
 			</div>
 			<div className="about-right">
